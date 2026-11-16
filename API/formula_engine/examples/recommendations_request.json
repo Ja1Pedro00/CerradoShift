@@ -1,0 +1,66 @@
+{
+  "current_commercial_crop": "soybean",
+  "crop_stage": "reproductive",
+  "field": {
+    "area_ha": 50,
+    "slope_percent": 3.5,
+    "irrigation_system": "center_pivot",
+    "irrigation_efficiency": 0.62,
+    "water_limited": true,
+    "available_machinery": ["semeadora", "pulverizador", "trator"],
+    "budget_level": "medium",
+    "cotton_years_since_last": 3
+  },
+  "soil_test": {
+    "sample_date": "2026-09-15",
+    "laboratory": "Laboratório de exemplo",
+    "ph_value": 5.0,
+    "ph_method": "CaCl2",
+    "ph_status": "low",
+    "nutrient_status": {"P": "low", "K": "adequate", "N": "unknown"},
+    "organic_matter_status": "low",
+    "texture_class": "argilosa",
+    "compaction_status": "unknown"
+  },
+  "pests": [
+    {
+      "pest_id": "pratylenchus_brachyurus",
+      "status": "confirmed",
+      "severity": "moderate",
+      "observed_date": "2026-10-20",
+      "notes": "Exemplo; diagnóstico laboratorial informado pelo produtor"
+    }
+  ],
+  "preferences": {
+    "priorities": ["water_saving", "soil_cover", "nutrient_cycling", "pest_break"],
+    "objective": "balanced",
+    "avoided_transition_crops": [],
+    "risk_tolerance": "low",
+    "notes": "Priorizar conservação do solo e segurança fitossanitária"
+  },
+  "rotation": {
+    "current_crop": "soybean",
+    "next_crop": "cotton",
+    "days_available": 75,
+    "pratylenchus_brachyurus_status": "present"
+  },
+  "model_results": {
+    "water_balance": {
+      "latest_ks": 0.68,
+      "latest_depletion_mm": 42.0,
+      "latest_raw_mm": 35.0,
+      "latest_taw_mm": 70.0,
+      "water_stress_days": 6,
+      "cumulative_runoff_mm": 12.0,
+      "cumulative_deep_percolation_mm": 8.0,
+      "irrigation_recommendation": {
+        "suggested_net_depth_mm": 24.5,
+        "suggested_gross_depth_mm": 39.5
+      }
+    },
+    "vegetation": {"ndvi_mean": 0.48, "anomaly_z": -2.2},
+    "erosion": {"soil_loss_t_ha_year": 7.5, "tolerable_soil_loss_t_ha_year": 5.0},
+    "phenology_thermal": {"high_temperature_days": 2}
+  },
+  "evaluation_date": "2026-11-14"
+}

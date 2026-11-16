@@ -1,0 +1,374 @@
+{
+  "engine_version": "0.1.0",
+  "scope": "Cerrado brasileiro — MVP soja, milho, algodão e culturas de transição",
+  "status": "recommendations_generated",
+  "recommendations": [
+    {
+      "id": "nutrient_p_review",
+      "category": "fertility",
+      "priority": "high",
+      "title": "Avaliar manejo de P indicado como baixo no laudo",
+      "recommended_action": "Solicitar recomendação de correção/manutenção de P baseada no método do laboratório, textura, CTC, expectativa de rendimento, cultura e recomendações oficiais para a região.",
+      "why_this_was_recommended": [
+        "A interpretação laboratorial fornecida classificou P como baixo."
+      ],
+      "confidence": "medium",
+      "missing_data": [
+        "Método analítico e unidade",
+        "CTC/textura",
+        "Meta de produtividade",
+        "Histórico de adubação e exportação"
+      ],
+      "safeguards": [
+        "Este motor não fornece dose em kg/ha; não usar concentração isolada como dose de fertilizante."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "soil_acidity_review",
+      "category": "fertility",
+      "priority": "high",
+      "title": "Avaliar correção da acidez do solo",
+      "recommended_action": "Solicitar interpretação do laudo por profissional habilitado para avaliar necessidade e dose de calcário, considerando método de pH, CTC, saturação por bases, textura, profundidade e cultura.",
+      "why_this_was_recommended": [
+        "O laudo foi informado como indicativo de pH baixo."
+      ],
+      "confidence": "medium",
+      "missing_data": [
+        "Método de pH",
+        "CTC e saturação por bases",
+        "Alumínio e cálcio/magnésio",
+        "Profundidade de incorporação"
+      ],
+      "safeguards": [
+        "Não calcular dose de calcário apenas pelo valor de pH; a recomendação depende do método regional."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "vegetation_anomaly_scout",
+      "category": "field_scouting",
+      "priority": "high",
+      "title": "Inspecionar áreas com anomalia negativa de vegetação",
+      "recommended_action": "Fazer vistoria georreferenciada e cruzar o mapa com umidade do solo, estágio, falhas de plantio, nutrição, pragas e doenças.",
+      "why_this_was_recommended": [
+        "A anomalia padronizada informada foi Z=-2.20, abaixo de -2."
+      ],
+      "confidence": "medium",
+      "missing_data": [],
+      "safeguards": [
+        "NDVI/EVI baixo não identifica sozinho seca, deficiência nutricional, praga ou doença."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "water_stress_action",
+      "category": "irrigation_and_water",
+      "priority": "high",
+      "title": "Investigar possível estresse hídrico",
+      "recommended_action": "Conferir a umidade do solo em mais de uma profundidade da zona radicular, verificar previsão de chuva e avaliar a programação de irrigação antes de aplicar água.",
+      "why_this_was_recommended": [
+        "O balanço hídrico retornou Ks=0.68.",
+        "A depleção estimada (42.0 mm) alcançou/superou RAW (35.0 mm)."
+      ],
+      "confidence": "medium",
+      "missing_data": [
+        "Leitura recente de umidade na zona radicular",
+        "Previsão de chuva de curto prazo",
+        "Verificação da uniformidade do sistema"
+      ],
+      "safeguards": [
+        "Lâmina líquida indicativa do modelo: 24.5 mm, se fornecida. Não aplicar sem conferir umidade, infiltração e capacidade do sistema."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "irrigation_efficiency_audit",
+      "category": "irrigation_system",
+      "priority": "high",
+      "title": "Fazer auditoria de eficiência e uniformidade da irrigação",
+      "recommended_action": "Medir vazão, pressão, uniformidade de distribuição, vazamentos e lâmina aplicada. Comparar a manutenção do sistema atual com alternativas somente após estudo técnico e econômico.",
+      "why_this_was_recommended": [
+        "A eficiência informada (62%) está abaixo do limiar de triagem de 70% configurado para gerar investigação."
+      ],
+      "confidence": "medium",
+      "missing_data": [
+        "Teste de uniformidade de distribuição",
+        "Vazão/pressão por setor",
+        "Tipo de solo e taxa de infiltração",
+        "Custo de energia e investimento"
+      ],
+      "safeguards": [
+        "O limiar de 70% é um gatilho operacional configurável, não uma norma universal nem prova de defeito.",
+        "Não recomendar troca automática para gotejamento, pivô ou aspersão sem projeto hidráulico."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false,
+      "system_options_to_evaluate": [
+        "auditar bocais, reguladores de pressão e uniformidade",
+        "avaliar baixa pressão e automação/setorização",
+        "comparar com irrigação localizada somente se cultura, solo, topografia e custos justificarem"
+      ]
+    },
+    {
+      "id": "pest_scout_pratylenchus_brachyurus",
+      "category": "pest_management",
+      "priority": "high",
+      "title": "Confirmar e monitorar a ocorrência fitossanitária",
+      "recommended_action": "Registrar pontos de ocorrência, estágio da cultura, intensidade, data e método de identificação; confirmar organismo e população com profissional/laboratório antes de selecionar controle.",
+      "why_this_was_recommended": [
+        "O produtor informou ocorrência confirmed de pratylenchus_brachyurus."
+      ],
+      "confidence": "medium",
+      "missing_data": [
+        "Identificação/diagnóstico",
+        "Distribuição espacial no talhão",
+        "Severidade ou densidade populacional",
+        "Cultivar e estádio"
+      ],
+      "safeguards": [
+        "Não recomendar defensivo, dose ou intervalo de aplicação sem diagnóstico, registro legal e receituário quando exigido."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "transition_crop_options",
+      "category": "rotation",
+      "priority": "high",
+      "title": "Avaliar culturas de transição entre as culturas comerciais",
+      "recommended_action": "Compare as opções abaixo com o calendário local, a disponibilidade de água, a cultivar, o custo da semente e a operação de semeadura/manejo.",
+      "why_this_was_recommended": [
+        "Objetivo usado para ordenar as opções: nematode_management.",
+        "A ordem considera as funções agronômicas cadastradas e as regras fitossanitárias iniciais; não é previsão de produtividade."
+      ],
+      "confidence": "medium",
+      "missing_data": [
+        "Data prevista de semeadura e chuva remanescente",
+        "Cultivar da planta de cobertura",
+        "Análise nematológica se o histórico ou sintomas justificarem"
+      ],
+      "safeguards": [
+        "Ausência de diagnóstico não significa ausência de nematoides.",
+        "Milheto e Urochloa podem multiplicar Pratylenchus brachyurus; não os considerar seguros quando o status for desconhecido.",
+        "Não converter automaticamente esta lista em recomendação de plantio."
+      ],
+      "sources": [
+        {
+          "name": "Embrapa — plantas de cobertura e manejo no Cerrado",
+          "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/943518/1/COT371.pdf"
+        },
+        {
+          "name": "Embrapa — plantas de cobertura em sucessão ao algodão",
+          "url": "https://www.embrapa.br/en/busca-de-publicacoes/-/publicacao/1157023/cover-plants-in-second-crop-nutrients-in-straw-and-cotton-yield-in-succession"
+        }
+      ],
+      "is_automatic_prescription": false,
+      "candidate_options": [
+        {
+          "crop_id": "crotalaria_spectabilis",
+          "name_pt": "Crotalária-espectábilis",
+          "suitability": "priority_candidate_with_technical_validation",
+          "reasons": [
+            "adubação verde",
+            "fixação biológica de nitrogênio",
+            "raiz pivotante",
+            "manejo específico de nematoides",
+            "Opção mais coerente com o objetivo de manejo de P. brachyurus nas referências consultadas."
+          ],
+          "cautions": [
+            "Em referências da Embrapa, é não hospedeira ou permite reprodução mínima de Pratylenchus brachyurus; confirmar espécie, população e recomendação local.",
+            "Não confundir com Crotalaria juncea, que pode ser suscetível a P. brachyurus."
+          ]
+        },
+        {
+          "crop_id": "crotalaria_ochroleuca",
+          "name_pt": "Crotalária-ochroleuca",
+          "suitability": "priority_candidate_with_technical_validation",
+          "reasons": [
+            "adubação verde",
+            "fixação biológica de nitrogênio",
+            "manejo específico de nematoides",
+            "Opção mais coerente com o objetivo de manejo de P. brachyurus nas referências consultadas."
+          ],
+          "cautions": [
+            "Em referências da Embrapa, é não hospedeira ou permite reprodução mínima de Pratylenchus brachyurus; confirmar espécie, população e recomendação local."
+          ]
+        },
+        {
+          "crop_id": "urochloa_ruziziensis",
+          "name_pt": "Urochloa ruziziensis (braquiária-ruziziensis)",
+          "suitability": "avoid_as_default_when_P_brachyurus_confirmed",
+          "reasons": [
+            "biomassa e palhada persistente",
+            "cobertura do solo",
+            "raízes e estruturação do perfil",
+            "consórcio com milho",
+            "Não priorizar enquanto P. brachyurus estiver confirmado na área."
+          ],
+          "cautions": [
+            "Braquiárias podem hospedar e multiplicar Pratylenchus brachyurus; verificar diagnóstico antes de indicar."
+          ]
+        },
+        {
+          "crop_id": "millet",
+          "name_pt": "Milheto",
+          "suitability": "avoid_as_default_when_P_brachyurus_confirmed",
+          "reasons": [
+            "biomassa e palhada",
+            "cobertura do solo",
+            "ciclagem de nutrientes",
+            "Não priorizar enquanto P. brachyurus estiver confirmado na área."
+          ],
+          "cautions": [
+            "Algumas cultivares podem hospedar e multiplicar Pratylenchus brachyurus; não indicar automaticamente em áreas com esse nematoide."
+          ]
+        }
+      ],
+      "rotation_warnings": [
+        "As culturas comerciais soja, milho e algodão também podem ser hospedeiras de P. brachyurus. A rotação não elimina o nematoide; usar análise nematológica e recomendação específica por espécie/cultivar.",
+        "A semeadura de plantas de cobertura no Cerrado depende da chuva remanescente: quanto mais tarde na estação chuvosa, menor tende a ser o estabelecimento e a biomassa. Não há data universal nesta versão."
+      ],
+      "ranking_basis": "ordem qualitativa orientada às preferências; não representa score de produtividade ou lucro"
+    },
+    {
+      "id": "erosion_control",
+      "category": "soil_conservation",
+      "priority": "high",
+      "title": "Priorizar medidas de conservação do solo",
+      "recommended_action": "Avaliar cobertura permanente, manutenção de palhada, plantio em nível, faixas vegetadas e práticas mecânicas dimensionadas por técnico conforme relevo e legislação local.",
+      "why_this_was_recommended": [
+        "A perda estimada (7.50 t/ha/ano) supera a tolerância local informada (5.00 t/ha/ano)."
+      ],
+      "confidence": "medium",
+      "missing_data": [],
+      "safeguards": [
+        "RUSLE é uma estimativa de erosão laminar e em sulcos; confirme fatores, unidade, escala e tolerância local."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "heat_stress_scout",
+      "category": "climate_risk",
+      "priority": "medium",
+      "title": "Vistoriar possíveis efeitos de calor na fase atual",
+      "recommended_action": "Conferir fase fenológica e sintomas, acompanhar umidade do solo e consultar limites térmicos validados para cultivar e fase antes de alterar o manejo.",
+      "why_this_was_recommended": [
+        "O modelo registrou 2 dia(s) acima do limite térmico informado."
+      ],
+      "confidence": "low",
+      "missing_data": [
+        "Limite validado para cultivar/fase",
+        "Duração horária do calor",
+        "Observação de campo"
+      ],
+      "safeguards": [],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "water_loss_investigation",
+      "category": "irrigation_and_water",
+      "priority": "medium",
+      "title": "Investigar perdas por escoamento ou drenagem",
+      "recommended_action": "Conferir se a intensidade de chuva/irrigação supera a infiltração, observar enxurradas e verificar a lâmina aplicada por setor. Considerar parcelamento da aplicação quando tecnicamente adequado.",
+      "why_this_was_recommended": [
+        "O balanço estimou 12.0 mm de escoamento acumulado.",
+        "O balanço estimou 8.0 mm de drenagem profunda acumulada."
+      ],
+      "confidence": "low",
+      "missing_data": [
+        "Dados de chuva por evento",
+        "Taxa de infiltração",
+        "Cobertura e declividade do talhão"
+      ],
+      "safeguards": [
+        "Os valores podem refletir a simplificação do modelo diário e precisam de confirmação em campo."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "water_availability_plan",
+      "category": "irrigation_system",
+      "priority": "medium",
+      "title": "Planejar o uso da água disponível",
+      "recommended_action": "Mapear a disponibilidade legal e sazonal de água, medir vazão e demanda por setor, revisar horários e turnos de irrigação e avaliar alternativas de maior controle somente com projeto técnico e econômico.",
+      "why_this_was_recommended": [
+        "O produtor informou limitação de disponibilidade de água."
+      ],
+      "confidence": "low",
+      "missing_data": [
+        "Vazão disponível por período",
+        "Outorga/licença e restrições de captação",
+        "Demanda das culturas por fase",
+        "Custo de energia e operação"
+      ],
+      "safeguards": [
+        "A escolha entre pivô, aspersão, gotejamento ou outro sistema depende de solo, topografia, cultura, vento, energia, investimento e manutenção; não há um sistema universalmente melhor."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "organic_matter_cover",
+      "category": "soil_conservation",
+      "priority": "medium",
+      "title": "Aumentar aporte de resíduos e cobertura do solo",
+      "recommended_action": "Avaliar plantas de cobertura e manutenção de palhada compatíveis com a janela de semeadura e o diagnóstico de nematoides; monitorar matéria orgânica ao longo de vários ciclos.",
+      "why_this_was_recommended": [
+        "A interpretação laboratorial indicou matéria orgânica baixa."
+      ],
+      "confidence": "medium",
+      "missing_data": [],
+      "safeguards": [
+        "Aumento de matéria orgânica é gradual e depende de biomassa, decomposição, clima e manejo; não é efeito imediato de uma única safra."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    },
+    {
+      "id": "soybean_biological_n_fixation_check",
+      "category": "fertility",
+      "priority": "low",
+      "title": "Verificar nodulação e inoculação da soja",
+      "recommended_action": "Registrar histórico de inoculação, condições de armazenamento/aplicação do inoculante e observar nodulação em plantas representativas com assistência técnica.",
+      "why_this_was_recommended": [
+        "A soja depende da fixação biológica de nitrogênio quando adequadamente estabelecida; a avaliação de nodulação é mais informativa que presumir necessidade de adubação nitrogenada."
+      ],
+      "confidence": "medium",
+      "missing_data": [],
+      "safeguards": [
+        "Não aplicar nitrogênio como correção automática com base apenas em um status genérico."
+      ],
+      "sources": [],
+      "is_automatic_prescription": false
+    }
+  ],
+  "data_gaps": [
+    "Interpretação de nitrogênio (N) ausente ou desconhecida; considerar histórico da cultura, matéria orgânica, fixação biológica e recomendação regional.",
+    "Interpretação laboratorial de Ca ausente ou desconhecida.",
+    "Interpretação laboratorial de Mg ausente ou desconhecida.",
+    "Interpretação laboratorial de S ausente ou desconhecida.",
+    "Verifique se a análise de solo ainda representa o talhão e o manejo atuais."
+  ],
+  "preferences_applied": {
+    "priorities": [
+      "water_saving",
+      "soil_cover",
+      "nutrient_cycling",
+      "pest_break"
+    ],
+    "objective": "balanced",
+    "avoided_transition_crops": [],
+    "risk_tolerance": "low",
+    "notes": "Priorizar conservação do solo e segurança fitossanitária"
+  },
+  "interpretation": "Motor baseado em regras explícitas e resultados fornecidos; não é sistema especialista validado em campo e não emite prescrição de dose ou aplicação.",
+  "mandatory_review": "Validar as ações com engenheiro-agrônomo e dados locais antes de executar operações de irrigação, calagem, adubação, controle fitossanitário ou mudança de rotação."
+}

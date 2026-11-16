@@ -1,0 +1,8 @@
+{
+  "current_crop": "soybean",
+  "next_crop": "cotton",
+  "days_available": 75,
+  "pratylenchus_brachyurus_status": "unknown",
+  "objective": "balanced",
+  "cotton_years_since_last": 3
+}

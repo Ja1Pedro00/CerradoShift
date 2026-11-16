@@ -1,0 +1,53 @@
+{
+  "latitude": -18.9,
+  "longitude": -48.3,
+  "elevation_m": 850,
+  "start_date": "2026-01-01",
+  "end_date": "2026-01-03",
+  "fetch_power": false,
+  "weather": [
+    {"day": "2026-01-01", "tmax_c": 31, "tmin_c": 19, "rh_mean_pct": 60, "wind_2m_m_s": 2, "solar_radiation_mj_m2_day": 20, "precipitation_mm_day": 0},
+    {"day": "2026-01-02", "tmax_c": 30, "tmin_c": 20, "rh_mean_pct": 65, "wind_2m_m_s": 1.8, "solar_radiation_mj_m2_day": 18, "precipitation_mm_day": 4},
+    {"day": "2026-01-03", "tmax_c": 32, "tmin_c": 20, "rh_mean_pct": 55, "wind_2m_m_s": 2.2, "solar_radiation_mj_m2_day": 22, "precipitation_mm_day": 0}
+  ],
+  "crop": {
+    "crop_id": "soybean",
+    "cultivar": "informar-cultivar",
+    "kc_initial": 0.4,
+    "kc_mid": 1.15,
+    "kc_end": 0.5,
+    "stage_initial_days": 20,
+    "stage_development_days": 30,
+    "stage_mid_days": 50,
+    "stage_late_days": 30,
+    "depletion_fraction_p": 0.5,
+    "root_depth_initial_m": 0.2,
+    "root_depth_max_m": 0.6,
+    "root_growth_days": 60,
+    "base_temperature_c": 10,
+    "heat_thresholds_by_stage": {"development": 35, "mid": 34},
+    "parameter_source": "Exemplo estrutural; validar para cultivar e Cerrado"
+  },
+  "soil": {
+    "field_capacity_m3_m3": 0.30,
+    "wilting_point_m3_m3": 0.15,
+    "initial_available_fraction": 0.6,
+    "initial_moisture_is_assumed": true,
+    "irrigation_efficiency": 0.85,
+    "effective_soil_depth_m": 0.8
+  },
+  "farmer": {
+    "field_area_ha": 5,
+    "planting_date": "2026-01-01",
+    "irrigation_frequency_days": 3,
+    "irrigation_method": "aspersao",
+    "sun_exposure_hours_day": 8,
+    "shade_percent": 5,
+    "mulch_cover_percent": 20,
+    "canopy_cover_percent": 30,
+    "current_stage_reported": "initial"
+  },
+  "irrigation_events": [
+    {"day": "2026-01-02", "gross_depth_mm": 12}
+  ]
+}

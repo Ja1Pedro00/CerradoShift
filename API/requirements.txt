@@ -1,0 +1,11 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+httpx>=0.27,<1.0
+pydantic>=2.7,<3.0
+python-dotenv>=1.0,<2.0
+rasterio>=1.4,<2.0
+shapely>=2.0,<3.0
+numpy>=1.26,<3.0
+certifi>=2024.2.2
+# Motor científico CerradoShift v0.5
+# (utiliza FastAPI, Pydantic e httpx já declarados acima)

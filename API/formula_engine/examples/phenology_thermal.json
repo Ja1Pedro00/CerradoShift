@@ -1,0 +1,10 @@
+{
+  "weather": [
+    {"day": "2026-01-01", "tmax_c": 30, "tmin_c": 20},
+    {"day": "2026-01-02", "tmax_c": 32, "tmin_c": 21},
+    {"day": "2026-01-03", "tmax_c": 34, "tmin_c": 22}
+  ],
+  "base_temperature_c": 10,
+  "upper_temperature_c": 30,
+  "heat_threshold_c": 35
+}

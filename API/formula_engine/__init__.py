@@ -1,0 +1,1 @@
+"""CerradoShift: núcleo agroclimático demonstrativo."""

@@ -1,0 +1,60 @@
+
+.map-preview {
+  width: 100%;
+  min-width: 0;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.preview-header h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.preview-header p {
+  margin: 0;
+  font-size: 13px;
+  color: #647983;
+}
+
+.preview-button {
+  background: #087c56;
+  color: white;
+  text-decoration: none;
+  padding: 11px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.preview-button:hover {
+  background: #065d42;
+}
+
+.preview-empty {
+  color: #647983;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.map-preview .leaflet-container {
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .preview-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .preview-button {
+    text-align: center;
+  }
+}

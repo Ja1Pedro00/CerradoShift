@@ -1,0 +1,82 @@
+
+.soil-diagnostic {
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.soil-controls,
+.soil-form,
+.soil-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.soil-diagnostic label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+}
+
+.soil-diagnostic input,
+.soil-diagnostic select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #b5bfc0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+}
+
+.soil-diagnostic button {
+  background: #197c54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.soil-diagnostic button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.soil-grid article,
+.soil-findings article {
+  padding: 18px;
+  border: 1px solid #b5bfc055;
+  border-radius: 12px;
+}
+
+.soil-grid strong {
+  font-size: 22px;
+}
+
+.soil-findings {
+  display: grid;
+  gap: 12px;
+}
+
+.soil-findings .attention {
+  border-left: 4px solid #d99b29;
+}
+
+.soil-findings .data_gap {
+  border-left: 4px solid #64748b;
+}
+
+.soil-error {
+  color: #dc2626;
+}
+
+@media (max-width: 650px) {
+  .soil-controls,
+  .soil-form,
+  .soil-grid {
+    grid-template-columns: 1fr;
+  }
+}

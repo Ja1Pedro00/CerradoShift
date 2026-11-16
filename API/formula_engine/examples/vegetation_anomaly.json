@@ -1,0 +1,7 @@
+{
+  "index_name": "ndvi",
+  "current_value": 0.30,
+  "historical_mean": 0.60,
+  "historical_std": 0.10,
+  "baseline_period": "same seasonal window, previous five years"
+}

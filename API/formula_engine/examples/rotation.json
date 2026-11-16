@@ -1,0 +1,4 @@
+{
+  "crop_sequence": ["maize", "sorghum", "soybean"],
+  "detected_pests": ["fall_armyworm", "soybean_cyst_nematode"]
+}

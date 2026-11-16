@@ -1,0 +1,9 @@
+{
+  "rainfall_erosivity_r": 1000,
+  "soil_erodibility_k": 0.03,
+  "slope_length_m": 50,
+  "slope_percent": 5,
+  "cover_factor_c": 0.2,
+  "support_practice_p": 0.5,
+  "slope_exponent_m": 0.5
+}
