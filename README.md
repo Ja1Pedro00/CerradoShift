@@ -6,6 +6,9 @@ CerradoShift is an open-source agricultural decision-support platform designed t
 
 Focused on Brazil's Cerrado biome, the platform combines NASA Earth observation data, environmental datasets, geospatial analysis, and scientific models to evaluate agricultural conditions and support more sustainable farming practices.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ee333d99-df88-439d-9202-44371b8380bf" />
+
+
 ## Key Features
 
 - **NASA Data Integration:** Historical climate information, precipitation, temperature, and satellite observations.
